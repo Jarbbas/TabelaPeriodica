@@ -5,15 +5,17 @@
     <meta charset="utf-8" />
     <title>Tabela Periódica</title>
     <link href="style.css" rel="stylesheet" />
+    
 </head>
 <body>
+
     <h1>Tabela Periódica  em HTML</h1>
     <div class="container">
         <table class="Table_TP">
             <tr class="Tr_TP">
                 <td class="naoMetais"><div class="elementNumber">1 </div><div class="elementSymbol">H</div></td>
                 <td class="HiddeCell"></td>
-                <td class="intro" colspan="10"><h2>Tabela Periódica</h2></td>
+                <td class="intro" id="elementoInfo" colspan="10"><h2>Tabela Periódica</h2></td>
                 <td class="HiddeCell"></td>
                 <td class="HiddeCell"></td>
                 <td class="HiddeCell"></td>
@@ -26,8 +28,44 @@
             <tr class="Tr_TP">
                 <td class="metaisAlcalinos"><div class="elementNumber">3</div><div class="elementSymbol">Li</div></td>
                 <td class="alcalinoTerrosos"><div class="elementNumber">4</div><div class="elementSymbol">Be</div></td>
-                <td class="info" colspan="10">A Tabela Periódica é um modelo que agrupa todos os elementos químicos conhecidos e suas propriedades.</td>
-                <td class="semiMetais"><div class="elementNumber">5 </div><div class="elementSymbol">B</div></td>
+                <td class="info" id="elementoInfo2" colspan="10" rowspan="2">
+                    
+                        <div>
+                            <div style="float: left;width: 150px;">
+                                <div class="elementSymbol" style="padding-top: 3rem; font-size: 30px;">Li</div>
+                                <div style="text-align: center;">Litio</div>
+                                <div style="padding-top: 1rem;">
+                                    <div style="border: 1px solid; margin-left: 1px; padding: 5px 1px; width: 30%; display: inline-block; text-align: center;" >24</div>
+                                    <div style="width: 60%; display: inline-block; text-align: right;" class="element_hover_details_3" >51.996</div>
+                                </div>
+                            </div>
+                            <div style="float: left;">
+                                <table id="elemento">
+                                    <tbody>
+                                    <tr>
+                                        <td>Símbolo</td>
+                                        <td id="element_data_symbol">Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Número atômico</td>
+                                        <td id="element_data_atomicnumber">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Massa atômica</td>
+                                        <td id="element_data_atomicmass">51.996</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Configuração eletrônica</td>
+                                        <td id="element_data_electconfig">[Ar] 3d<sup>4</sup> 4s<sup>2</sup></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                    
+                </td>
+                <td class="semiMetais" ><div class="elementNumber">5 </div><div class="elementSymbol">B</div></td>
                 <td class="naoMetais"><div class="elementNumber">6 </div><div class="elementSymbol">C</div></td>
                 <td class="naoMetais"><div class="elementNumber">7 </div><div class="elementSymbol">N</div></td>
                 <td class="naoMetais"><div class="elementNumber">8 </div><div class="elementSymbol">O</div></td>
@@ -37,7 +75,7 @@
             <tr class="Tr_TP">
                 <td class="metaisAlcalinos"><div class="elementNumber">11 </div><div class="elementSymbol">Na</div></td>
                 <td class="alcalinoTerrosos"><div class="elementNumber">12 </div><div class="elementSymbol">Mg</div></td>
-                <td class="info" colspan="10">Eles estão organizados em ordem crescente correspondente aos números atômicos (número de prótons).</td>
+                <!-- <td class="info" colspan="10"></td> -->
                 <td class="outrosMetais"><div class="elementNumber">13 </div><div class="elementSymbol">Al</div></td>
                 <td class="semiMetais"><div class="elementNumber">14 </div><div class="elementSymbol">Si</div></td>
                 <td class="naoMetais"><div class="elementNumber">15 </div><div class="elementSymbol">P</div></td>
@@ -203,6 +241,7 @@
         <span>Toda a informação quimica refrente a estes elementos pode ser consulta na <a href="https://www.todamateria.com.br/tabela-periodica/" target="_blank" >página fonte</a></span>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
 
     
