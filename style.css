@@ -72,6 +72,10 @@ td {
     visibility:hidden;
 }
 
+.showCell{
+    visibility:show;
+}
+
 .elementSymbol {
     margin: 0px;
     padding: 0px;

@@ -13,7 +13,7 @@
     <div class="container">
         <table class="Table_TP">
             <tr class="Tr_TP">
-                <td class="naoMetais"><div class="elementNumber">1 </div><div class="elementSymbol">H</div></td>
+                <td class="naoMetais" onmouseover="caracteristicaElemento('1', 'H', 'Hidrogéneo', '1.008', '1s<sup>1</sup>')" onmouseout="hideDiv()"><div class="elementNumber" >1 </div><div class="elementSymbol">H</div></td>
                 <td class="HiddeCell"></td>
                 <td class="intro" id="elementoInfo" colspan="10"><h2>Tabela Periódica</h2></td>
                 <td class="HiddeCell"></td>
@@ -30,13 +30,13 @@
                 <td class="alcalinoTerrosos"><div class="elementNumber">4</div><div class="elementSymbol">Be</div></td>
                 <td class="info" id="elementoInfo2" colspan="10" rowspan="2">
                     
-                        <div>
+                        <div id="legendTable" class="HiddeCell">
                             <div style="float: left;width: 150px;">
-                                <div class="elementSymbol" style="padding-top: 3rem; font-size: 30px;">Li</div>
-                                <div style="text-align: center;">Litio</div>
+                                <div class="elementSymbol" style="padding-top: 3rem; font-size: 30px;" id="element_logo_symbol"></div>
+                                <div style="text-align: center;" id="element_logo_name"></div>
                                 <div style="padding-top: 1rem;">
-                                    <div style="border: 1px solid; margin-left: 1px; padding: 5px 1px; width: 30%; display: inline-block; text-align: center;" >24</div>
-                                    <div style="width: 60%; display: inline-block; text-align: right;" class="element_hover_details_3" >51.996</div>
+                                    <div style="border: 1px solid; margin-left: 1px; padding: 5px 1px; width: 30%; display: inline-block; text-align: center;" id="element_logo_atomicnumber" ></div>
+                                    <div style="width: 60%; display: inline-block; text-align: right;" class="element_hover_details_3" id="element_logo_atomicmass"></div>
                                 </div>
                             </div>
                             <div style="float: left;">
@@ -44,19 +44,19 @@
                                     <tbody>
                                     <tr>
                                         <td>Símbolo</td>
-                                        <td id="element_data_symbol">Cr</td>
+                                        <td id="element_table_symbol"></td>
                                     </tr>
                                     <tr>
                                         <td>Número atômico</td>
-                                        <td id="element_data_atomicnumber">24</td>
+                                        <td id="element_table_atomicnumber"></td>
                                     </tr>
                                     <tr>
                                         <td>Massa atômica</td>
-                                        <td id="element_data_atomicmass">51.996</td>
+                                        <td id="element_table_atomicmass"></td>
                                     </tr>
                                     <tr>
                                         <td>Configuração eletrônica</td>
-                                        <td id="element_data_electconfig">[Ar] 3d<sup>4</sup> 4s<sup>2</sup></td>
+                                        <td id="element_table_electconfig"></td>
                                     </tr>
                                     </tbody>
                                 </table>
