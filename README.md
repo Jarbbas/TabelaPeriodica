@@ -5,7 +5,7 @@ Esta pequena página é um mini projeto de uma Tabela Periódica
 
 ## Objectivo 
 
-O propósito deste mini projeto, era a criação de uma tabela dos elementos periódicos, recorrendo ao elemento HTML <table></table> e alguns recursos de CSS
+O propósito deste mini projeto, era a criação de uma tabela dos elementos periódicos, recorrendo ao elemento HTML < table></ table> e alguns recursos de CSS
 para embelezar e javascript.
 
 Neste momento temos apenas implementada a funcionalidade dinâmica(info detalhada) para os primeiros 10 elementos.
